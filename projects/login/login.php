@@ -30,11 +30,16 @@ if ( isset( $_POST['username'] ) && isset( $_POST['password'] ) ) {
 <html>
 <head>
     <title>Login</title>
+    <style>
+        <?php include 'styles.css'; ?>
+    </style>
 </head>
 <body>
+    <div class="container">
     <?php if ( isset( $error ) ): ?>
-        <p><?php echo $error; ?></p>
-    <?php endif;?>
+    <p class="error-message"><?php echo $error; ?></p>
+<?php endif;?>
+
     <form method="post">
         <label>Username:</label>
         <input type="text" name="username"><br>
@@ -42,5 +47,7 @@ if ( isset( $_POST['username'] ) && isset( $_POST['password'] ) ) {
         <input type="password" name="password"><br>        
         <input type="submit" value="Login">
     </form>
+    </div>
+ 
 </body>
 </html>
