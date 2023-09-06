@@ -1,65 +1,40 @@
 <?php
 
-// Example 1
-$integerVar = 42;        // int
-$floatVar = 3.14;        // float
-$stringVar = "Hello";    // string
-$boolVar = true;         // bool
+// variables, constants,comments, printing, arithmetic operators, printf, conditionals, ternary operators
 
-// Displaying variable values
-echo $integerVar .PHP_EOL ;
-echo $floatVar .PHP_EOL ;
-echo $stringVar .PHP_EOL ;
-echo $boolVar .PHP_EOL ;  
+// ✅Example 1
 
-/*
-Formatting Output Using Escape Characters:
-Escape characters are used to represent certain special characters in strings. These characters are prefixed with a backslash \.
+// $integerVar = 42;        // int
+// $floatVar = 3.14;        // float
+// $stringVar = "Hello";    // string
+// $boolVar = true;         // bool
 
-Some commonly used escape characters in PHP are:
-
-\n: Newline character
-\t: Tab character
-\": Double quote
-\': Single quote
-\\: Backslash
-Here's an example demonstrating the use of these escape characters: 
-*/ 
-
-echo "Hello\tWorld!\n I love bangladesh";       // Outputs: Hello    World! (with a tab space and then moves to the next line)
-
-echo "She said, \"Hello!\""; // Outputs: She said, "Hello!"
-
-echo 'It\'s a beautiful day!'; // Outputs: It's a beautiful day!
+// // Displaying variable values
+// echo $integerVar .PHP_EOL ;
+// echo $floatVar .PHP_EOL ;
+// echo $stringVar .PHP_EOL ;
+// echo $boolVar .PHP_EOL ;  
 
 
 
+// ✅Example 2
+
+// $age = 25;         // Valid variable name
+// $_username = "John"; // Valid variable name with underscore
+// $myName123 = "Alice"; // Valid variable name with numbers
+// $my_var = "✅Example";  // Valid variable name using underscores
+
+// // $2years = 2023;     // Invalid: Variable name can't start with a number
+// // $user-name = "Alex"; // Invalid: Variable name can't contain hyphens
+
+// echo $age.PHP_EOL;
+// echo $_username.PHP_EOL;
+// echo $myName123.PHP_EOL;
+// echo $my_var.PHP_EOL;
 
 
+// ✅Example 3
 
-
-
-
-
-
-// Example 2
-
-$age = 25;         // Valid variable name
-$_username = "John"; // Valid variable name with underscore
-$myName123 = "Alice"; // Valid variable name with numbers
-$my_var = "example";  // Valid variable name using underscores
-
-// $2years = 2023;     // Invalid: Variable name can't start with a number
-// $user-name = "Alex"; // Invalid: Variable name can't contain hyphens
-
-echo $age.PHP_EOL;
-echo $_username.PHP_EOL;
-echo $myName123.PHP_EOL;
-echo $my_var.PHP_EOL;
-
-
-
-// Example 3
 // $globalVar = 100;     // Global variable
 
 // function myFunction() {
@@ -76,9 +51,7 @@ echo $my_var.PHP_EOL;
 
 
 
-
-
-// Example 4
+// ✅Example 4
 
 // define("PI", 3.14159265359);
 // echo PI; // Outputs: 3.14159265359
@@ -86,7 +59,7 @@ echo $my_var.PHP_EOL;
 
 
 
-// Example 5
+// ✅Example 5
 
 // define("MAX_USERS", 100);
 // echo MAX_USERS; // Outputs: 100
@@ -94,7 +67,7 @@ echo $my_var.PHP_EOL;
 
 
 
-// Example 6
+// ✅Example 6
 
 // $variable = 10;
 // define("CONSTANT", 20);
@@ -105,7 +78,7 @@ echo $my_var.PHP_EOL;
 
 
 
-// Example 7
+// ✅Example 7
 
 // $myVar = "I am a variable";
 // define("MY_CONST", "I am a constant");
@@ -117,17 +90,19 @@ echo $my_var.PHP_EOL;
 
 // testFunction();
 
-// Example 8
+
+
+// ✅Example 8
 
 // echo "Hello, World!";
 // echo "Hello", " ", "World!";  // Using multiple parameters
 
-// Example 9
+// ✅Example 9
 
-print "Hello, World!";
+// print "Hello, World!";
 
 
-// Example 10
+// ✅Example 10
 
 // $firstName = "John";
 // $lastName = "Doe";
@@ -135,7 +110,9 @@ print "Hello, World!";
 // // Concatenate using . operator
 // echo $firstName . " " . $lastName;  // Outputs: John Doe
 
-// Example 11
+
+
+// ✅Example 11
 
 // $text = "Hello";
 // $text .= ", World!";
@@ -144,7 +121,7 @@ print "Hello, World!";
 
 
 
-// Example 12
+// ✅Example 12
 
 // $a = 5;
 // $b = 3;
@@ -169,63 +146,44 @@ print "Hello, World!";
 // echo "The remainder when $a is divided by $b is: $mod";  // Outputs: The remainder when 5 is divided by 3 is: 2
 
 
+// ✅Example 13
 
-
-
-<!-- 👇👇👇👇 printf() function in PHP.
-
-printf() Function in PHP
-The printf() function is used to display a formatted string. It works by using format specifiers for various types of data. This function is similar to the sprintf() function, with the difference being that printf() displays the output while sprintf() returns the formatted string.
-
-Format Specifiers
-Here are the commonly used format specifiers: -->
-
-<!-- %d - for integers
+/*
+%d - for integers
 %f - for floating-point numbers
 %s - for strings
-%c - for characters -->
-<!-- Basic Usage: -->
-
-<!-- <?php
-
-$intVar = 5;
-$floatVar = 3.14;
-$stringVar = "Hello";
-$charVar = 'A';
-
-printf("Integer: %d\n", $intVar);
-printf("Float: %f\n", $floatVar);
-printf("String: %s\n", $stringVar);
-printf("Char: %c\n", $charVar);
-
-?> -->
-
-<!-- Output:
-
-
-Integer: 5
-Float: 3.140000
-String: Hello
-Char: A -->
+%c - for characters 
+*/ 
 
 
 
-<!--👇👇👇 Conditionals -->
+// $intVar = 5;
+// $floatVar = 3.14;
+// $stringVar = "Hello";
+// $charVar = 'A';
 
-<!-- <?php
+// printf("Integer: %d\n", $intVar);
+// printf("Float: %f\n", $floatVar);
+// printf("String: %s\n", $stringVar);
+// printf("Char: %c\n", $charVar);
+
+
+
+
+// ✅Example 14
 $age = 18;
 
 if ($age >= 18) {
     echo "You are eligible to vote.";
 }
 
-?> -->
 
 
 
 
-<!-- 2.👉 Using comparison operators:
-Comparison operators allow us to compare values:
+
+/*
+Comparison Operators:
 
 == : Equal to
 != : Not equal to
@@ -233,130 +191,155 @@ Comparison operators allow us to compare values:
 > : Greater than
 <= : Less than or equal to
 >= : Greater than or equal to
-Here are some examples using these operators: -->
+Here are some ✅Examples using these operators: 
 
-<!-- <?php
-$number = 10;
 
-if ($number == 10) {
-    echo "The number is 10.";
-}
+*/ 
 
-if ($number != 15) {
-    echo "The number is not 15.";
-}
 
-if ($number < 20) {
-    echo "The number is less than 20.";
-}
 
-if ($number > 5) {
-    echo "The number is greater than 5.";
-}
+// $number = 10;
 
-if ($number <= 10) {
-    echo "The number is 10 or less.";
-}
+// if ($number == 10) {
+//     echo "The number is 10.";
+// }
 
-if ($number >= 9) {
-    echo "The number is 9 or more.";
-}
+// if ($number != 15) {
+//     echo "The number is not 15.";
+// }
 
-?> -->
+// if ($number < 20) {
+//     echo "The number is less than 20.";
+// }
 
-<!--👉 3. Building conditions using logical operators:
-Logical operators allow us to combine multiple conditions:
+// if ($number > 5) {
+//     echo "The number is greater than 5.";
+// }
+
+// if ($number <= 10) {
+//     echo "The number is 10 or less.";
+// }
+
+// if ($number >= 9) {
+//     echo "The number is 9 or more.";
+// }
+
+
+/*
+ logical operators:
+
 
 && : AND
 || : OR
 ! : NOT
-Here are examples of their usage:
 
-Using && (AND):
-Executes the code if both conditions are true. -->
+*/ 
 
-<!-- <?php
-$age = 20;
-$hasID = true;
-
-if ($age >= 18 && $hasID) {
-    echo "You can enter the club.";
-}
-
-?> -->
-
-<!-- In this case, because the person is over 18 and has an ID, they can enter the club.
-
-👉Using || (OR):
-Executes the code if at least one of the conditions is true. -->
-
-<!-- <?php
-$isWeekend = true;
-$hasHoliday = false;
-
-if ($isWeekend || $hasHoliday) {
-    echo "You don't have to go to work.";
-}
-
-?> -->
+// ✅Example 15
 
 
-<!-- 👉Using ! (NOT):
-Negates the condition. It's used to check if something is not true. -->
+// $age = 20;
+// $hasID = true;
 
-<!-- <?php
-$isRaining = false;
-
-if (!$isRaining) {
-    echo "You don't need an umbrella.";
-}
-
-?> -->
+// if ($age >= 18 && $hasID) {
+//     echo "You can enter the club.";
+// }
 
 
-<!--👇👇👇 Ternary Operator -->
 
-<!-- <?php
-$age=19;
+// ✅Example 16
 
-$status = ($age < 18) ? "minor" : "adult";
-echo $status;
+// $isWeekend = true;
+// $hasHoliday = false;
 
-?> -->
+// if ($isWeekend || $hasHoliday) {
+//     echo "You don't have to go to work.";
+// }
 
 
-<!--👇👇👇 Switch Case -->
 
-<!-- <?php
-$day = 3; // Wednesday
 
-switch ($day) {
-    case 1:
-        echo "Monday";
-        break;
-    case 2:
-        echo "Tuesday";
-        break;
-    case 3:
-        echo "Wednesday";
-        break;
-    case 4:
-        echo "Thursday";
-        break;
-    case 5:
-        echo "Friday";
-        break;
-    case 6:
-        echo "Saturday";
-        break;
-    case 7:
-        echo "Sunday";
-        break;
-    default:
-        echo "Invalid day number!";
-}
+// ✅Example 17
 
-?> -->
+// $isRaining = false;
+
+// if (!$isRaining) {
+//     echo "You don't need an umbrella.";
+// }
+
+
+
+
+// ✅Example 18
+
+// $age=19;
+
+// $status = ($age < 18) ? "minor" : "adult";
+// echo $status;
+
+
+
+// ✅Example 19
+
+// $day = 3; // Wednesday
+
+// switch ($day) {
+//     case 1:
+//         echo "Monday";
+//         break;
+//     case 2:
+//         echo "Tuesday";
+//         break;
+//     case 3:
+//         echo "Wednesday";
+//         break;
+//     case 4:
+//         echo "Thursday";
+//         break;
+//     case 5:
+//         echo "Friday";
+//         break;
+//     case 6:
+//         echo "Saturday";
+//         break;
+//     case 7:
+//         echo "Sunday";
+//         break;
+//     default:
+//         echo "Invalid day number!";
+// }
+
+
+
+/*
+Formatting Output Using Escape Characters:
+Escape characters are used to represent certain special characters in strings. These characters are prefixed with a backslash \.
+
+Some commonly used escape characters in PHP are:
+
+\n: Newline character
+\t: Tab character
+\": Double quote
+\': Single quote
+\\: Backslash
+Here's an ✅Example demonstrating the use of these escape characters: 
+*/ 
+
+// ✅Example 20
+
+// echo "Hello\tWorld!\n I love bangladesh";       // Outputs: Hello    World! (with a tab space and then moves to the next line)
+
+// echo "She said, \"Hello!\""; // Outputs: She said, "Hello!"
+
+// echo 'It\'s a beautiful day!'; // Outputs: It's a beautiful day!
+
+
+
+
+
+
+
+
 
 
 
