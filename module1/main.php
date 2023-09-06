@@ -4,16 +4,16 @@
 
 // ✅Example 1
 
-// $integerVar = 42;        // int
-// $floatVar = 3.14;        // float
-// $stringVar = "Hello";    // string
-// $boolVar = true;         // bool
+$integerVar = 42;        // int
+$floatVar = 3.14;        // float
+$stringVar = "Hello";    // string
+$boolVar = true;         // bool
 
-// // Displaying variable values
-// echo $integerVar .PHP_EOL ;
-// echo $floatVar .PHP_EOL ;
-// echo $stringVar .PHP_EOL ;
-// echo $boolVar .PHP_EOL ;  
+// Displaying variable values
+echo $integerVar .PHP_EOL ;
+echo $floatVar .PHP_EOL ;
+echo $stringVar .PHP_EOL ;
+echo $boolVar .PHP_EOL ;  
 
 
 
@@ -171,11 +171,11 @@
 
 
 // ✅Example 14
-$age = 18;
+// $age = 18;
 
-if ($age >= 18) {
-    echo "You are eligible to vote.";
-}
+// if ($age >= 18) {
+//     echo "You are eligible to vote.";
+// }
 
 
 
