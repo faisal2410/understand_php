@@ -273,13 +273,14 @@ echo "Division: $division<br>";
 
 <!-- Coding Challenge 2: Temperature Conversion -->
 
-<!-- <?php
+<!-- 
+    <?php
 $celsius = 25;
 $fahrenheit = ($celsius * 9/5) + 32;
 
-echo "Celsius: $celsius°C<br>";
-echo "Fahrenheit: $fahrenheit°F<br>";
-?> -->
+echo "Celsius:". $celsius."°C"."<br>";
+echo "Fahrenheit:". $fahrenheit."°F"."<br>";
+?>  -->
 
 
 <!-- Coding Challenge 3: String Manipulation -->
@@ -394,8 +395,8 @@ if ($celsiusTemp >= 30) {
     $classification = "cold";
 }
 
-echo "Temperature: $celsiusTemp°C<br>";
-echo "Classification: $classification<br>";
+echo "Temperature: ".$celsiusTemp."°C"."<br>";
+echo "Classification: ".$classification."<br>";
 ?> -->
 
 
