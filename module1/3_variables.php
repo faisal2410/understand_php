@@ -3,7 +3,7 @@ In PHP, variables are used to store and manipulate data. Each variable has a nam
 
 <!--✅ Example:1 -->
 
-<?php
+<!-- <?php
 // 👉Declaring variables and assigning values
 $integerVar = 42;        // int
 $floatVar = 3.14;        // float
@@ -15,7 +15,7 @@ echo $integerVar . "<br>";
 echo $floatVar . "<br>";
 echo $stringVar . "<br>";
 echo $boolVar . "<br>";  // Outputs 1 for true, nothing for false
-?>
+?> -->
 
 
 <!-- 👉Variable Naming Conventions and Rules
@@ -31,21 +31,14 @@ $my_var = "example";  // Valid variable name using underscores
 
 // $2years = 2023;     // Invalid: Variable name can't start with a number
 // $user-name = "Alex"; // Invalid: Variable name can't contain hyphens
+
+echo $age."<br>";
+echo $_username."<br>";
+echo $myName123."<br>";
+echo $my_var."<br>";
 ?> -->
 
-<!-- 👉Declaring and Initializing Variables
-Variables are declared using the dollar sign ($) followed by the variable name. You can assign values during declaration or later in the code. -->
 
-<!--✅ Example:3 -->
-
-<!-- <?php
-$firstName = "John";  // Declaring and initializing a string variable
-$age = 30;            // Declaring and initializing an integer variable
-
-// Later in the code:
-$lastName = "Doe";    // Initializing another string variable
-$height = 5.9;        // Declaring and initializing a float variable
-?> -->
 
 <!-- 
 Variable Scope (Local and Global)

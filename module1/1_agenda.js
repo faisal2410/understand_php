@@ -5,7 +5,6 @@
 // 👉2. Variables
 // Introduction to variables and data types (int, float, string, bool)
 // Variable naming conventions and rules
-// Declaring and initializing variables
 // Variable scope (local, global)
 // 👉3. Constants
 // Defining constants using define()
