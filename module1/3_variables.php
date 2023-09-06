@@ -44,7 +44,7 @@ echo $my_var."<br>";
 Variable Scope (Local and Global)
 Variable scope refers to where a variable is accessible and usable within your code. PHP has two main types of variable scope: local and global. -->
 
-<!--✅ Example:4 -->
+<!--✅ Example:3 -->
 
 <!-- <?php
 $globalVar = 100;     // Global variable
