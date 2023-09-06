@@ -1,28 +1,49 @@
+<?php
 
-<!--👇 Variables -->
-
-<!--✅ Example:1 -->
-
-<!-- <?php
-// 👉Declaring variables and assigning values
+// Example 1
 $integerVar = 42;        // int
 $floatVar = 3.14;        // float
 $stringVar = "Hello";    // string
 $boolVar = true;         // bool
 
 // Displaying variable values
-echo $integerVar . "<br>";
-echo $floatVar . "<br>";
-echo $stringVar . "<br>";
-echo $boolVar . "<br>";  // Outputs 1 for true, nothing for false
-?> -->
+echo $integerVar .PHP_EOL ;
+echo $floatVar .PHP_EOL ;
+echo $stringVar .PHP_EOL ;
+echo $boolVar .PHP_EOL ;  
+
+/*
+Formatting Output Using Escape Characters:
+Escape characters are used to represent certain special characters in strings. These characters are prefixed with a backslash \.
+
+Some commonly used escape characters in PHP are:
+
+\n: Newline character
+\t: Tab character
+\": Double quote
+\': Single quote
+\\: Backslash
+Here's an example demonstrating the use of these escape characters: 
+*/ 
+
+echo "Hello\tWorld!\n I love bangladesh";       // Outputs: Hello    World! (with a tab space and then moves to the next line)
+
+echo "She said, \"Hello!\""; // Outputs: She said, "Hello!"
+
+echo 'It\'s a beautiful day!'; // Outputs: It's a beautiful day!
 
 
 
 
-<!--✅ Example:2 -->
 
-<!-- <?php
+
+
+
+
+
+
+// Example 2
+
 $age = 25;         // Valid variable name
 $_username = "John"; // Valid variable name with underscore
 $myName123 = "Alice"; // Valid variable name with numbers
@@ -31,151 +52,122 @@ $my_var = "example";  // Valid variable name using underscores
 // $2years = 2023;     // Invalid: Variable name can't start with a number
 // $user-name = "Alex"; // Invalid: Variable name can't contain hyphens
 
-echo $age."<br>";
-echo $_username."<br>";
-echo $myName123."<br>";
-echo $my_var."<br>";
-?> -->
-
-
-<!--✅ Example:3 -->
-
-<!-- <?php
-$globalVar = 100;     // Global variable
-
-function myFunction() {
-    $localVar = 50;   // Local variable within the function
-    global $globalVar; // Accessing global variable within the function
-    echo "Local Variable: " . $localVar . "<br>";
-    echo "Global Variable inside function: " . $globalVar . "<br>";
-}
-
-
-myFunction();
-// echo "Local Variable outside function: " . $localVar; // Error: $localVar is not accessible here
-echo "Global Variable outside function: " . $globalVar;
-?> -->
-
-<!-- 👇👇 Constant -->
-
-
-<!-- Let's define a constant: -->
-
- <!-- <?php
-define("PI", 3.14159265359);
-echo PI; // Outputs: 3.14159265359
-
-?> -->
+echo $age.PHP_EOL;
+echo $_username.PHP_EOL;
+echo $myName123.PHP_EOL;
+echo $my_var.PHP_EOL;
 
 
 
-<!-- <?php
-define("MAX_USERS", 100);
-echo MAX_USERS; // Outputs: 100
+// Example 3
+// $globalVar = 100;     // Global variable
 
-?> -->
-
-
-
-<!-- <?php
-$variable = 10;
-define("CONSTANT", 20);
-
-$variable = 30;   // This is valid
-// CONSTANT = 40; // This will trigger an error
-?> -->
+// function myFunction() {
+//     $localVar = 50;   // Local variable within the function
+//     global $globalVar; // Accessing global variable within the function
+//     echo "Local Variable: " . $localVar . PHP_EOL;
+//     echo "Global Variable inside function: " . $globalVar . PHP_EOL;
+// }
 
 
-
-<!-- <?php
-$myVar = "I am a variable";
-define("MY_CONST", "I am a constant");
-
-function testFunction() {
-    echo MY_CONST;   // Works because constants are globally scoped
-    // echo $myVar; // Might not work if $myVar is defined outside and not passed as an argument or globalized
-}
-?> -->
+// myFunction();
+// // echo "Local Variable outside function: " . $localVar; // Error: $localVar is not accessible here
+// echo "Global Variable outside function: " . $globalVar;
 
 
 
-<!--👇👇👇 Displaying using echo and print -->
 
 
-<!-- <?php
-echo "Hello, World!";
-echo "Hello", " ", "World!";  // Using multiple parameters
+// Example 4
 
-?> -->
-
+// define("PI", 3.14159265359);
+// echo PI; // Outputs: 3.14159265359
 
 
-<!-- <?php
+
+
+// Example 5
+
+// define("MAX_USERS", 100);
+// echo MAX_USERS; // Outputs: 100
+
+
+
+
+// Example 6
+
+// $variable = 10;
+// define("CONSTANT", 20);
+
+// $variable = 30;   // This is valid
+// // CONSTANT = 40; // This will trigger an error
+
+
+
+
+// Example 7
+
+// $myVar = "I am a variable";
+// define("MY_CONST", "I am a constant");
+
+// function testFunction() {
+//     echo MY_CONST;   // Works because constants are globally scoped
+//     // echo $myVar; // Might not work if $myVar is defined outside and not passed as an argument or globalized
+// }
+
+// testFunction();
+
+// Example 8
+
+// echo "Hello, World!";
+// echo "Hello", " ", "World!";  // Using multiple parameters
+
+// Example 9
+
 print "Hello, World!";
-?> -->
 
 
-<!-- <?php
-$firstName = "John";
-$lastName = "Doe";
+// Example 10
 
-// Concatenate using . operator
-echo $firstName . " " . $lastName;  // Outputs: John Doe
-?> -->
+// $firstName = "John";
+// $lastName = "Doe";
 
+// // Concatenate using . operator
+// echo $firstName . " " . $lastName;  // Outputs: John Doe
 
-<!-- <?php
-$text = "Hello";
-$text .= ", World!";
-echo $text;  // Outputs: Hello, World!
-?> -->
+// Example 11
 
-
-
-<!-- 👇👇👇Arithmetic Operations in PHP -->
-
-
-<!-- <?php
-$a = 5;
-$b = 3;
-
-$sum = $a + $b;
-echo "The sum of $a and $b is: $sum";  // Outputs: The sum of 5 and 3 is: 8
-?> -->
-
-
-
-<!-- <?php
-$diff = $a - $b;
-echo "The difference between $a and $b is: $diff";  // Outputs: The difference between 5 and 3 is: 2
-?> -->
+// $text = "Hello";
+// $text .= ", World!";
+// echo $text;  // Outputs: Hello, World!
 
 
 
 
-<!-- 
-<?php
-$prod = $a * $b;
-echo "The product of $a and $b is: $prod";  // Outputs: The product of 5 and 3 is: 15
-?> -->
+// Example 12
+
+// $a = 5;
+// $b = 3;
+
+// $sum = $a + $b;
+// echo "The sum of $a and $b is: $sum";  // Outputs: The sum of 5 and 3 is: 8
 
 
+// $diff = $a - $b;
+// echo "The difference between $a and $b is: $diff";  // Outputs: The difference between 5 and 3 is: 2
 
 
-<!-- <?php
-$div = $a / $b;
-echo "The division of $a by $b is: $div";  // Outputs: The division of 5 by 3 is: 1.6666666666667
-?> -->
+// $prod = $a * $b;
+// echo "The product of $a and $b is: $prod";  // Outputs: The product of 5 and 3 is: 15
 
 
-<!-- 5. Modulus (%)
-This operator returns the remainder when one number is divided by another. -->
+// $div = $a / $b;
+// echo "The division of $a by $b is: $div";  // Outputs: The division of 5 by 3 is: 1.6666666666667
 
 
-<!-- <?php
-$mod = $a % $b;
-echo "The remainder when $a is divided by $b is: $mod";  // Outputs: The remainder when 5 is divided by 3 is: 2
-?> -->
+// $mod = $a % $b;
+// echo "The remainder when $a is divided by $b is: $mod";  // Outputs: The remainder when 5 is divided by 3 is: 2
+
 
 
 
