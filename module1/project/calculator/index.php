@@ -1,3 +1,12 @@
+<?php
+echo $_SERVER['SERVER_NAME'];
+?>
+
+ <?php
+ echo 'User IP Address: ' . $_SERVER['REMOTE_ADDR'] . '<br>';
+ echo 'User Agent: ' . $_SERVER['HTTP_USER_AGENT'] . '<br>';
+ ?> 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
