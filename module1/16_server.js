@@ -59,7 +59,7 @@
 // I hope this gives you a clear understanding! If you have any further questions or topics you'd like to explore, feel free to ask.
 
 
-// Understanding $_POST
+// ✅Understanding $_POST
 // In PHP, $_POST is a superglobal array that is used to collect form data sent in an HTTP POST request. It allows you to access the data sent in the request body, which is often used to collect data from HTML forms.
 
 // Usage of $_POST
@@ -94,8 +94,7 @@
 // 3. Checking if a Form Field is Set
 // Before you access a form field with $_POST, it's a good practice to check if the field is set using isset() to avoid PHP undefined index notices:
 
-// php
-// Copy code
+
 // <?php
 // if ($_SERVER["REQUEST_METHOD"] == "POST") {
 //     if (isset($_POST['name'])) {
@@ -109,8 +108,7 @@
 // 4. Working with Different Input Types
 // You can work with various input types, such as text, radio buttons, checkboxes, and others using $_POST. Here is an example with a radio button:
 
-// php
-// Copy code
+
 // <?php
 // if ($_SERVER["REQUEST_METHOD"] == "POST") {
 //     $gender = htmlspecialchars($_POST['gender']);
@@ -127,5 +125,15 @@
 
 
 
+
+
+// <?php
+// echo $_SERVER['SERVER_NAME'];
+// ?>
+
+//  <?php
+//  echo 'User IP Address: ' . $_SERVER['REMOTE_ADDR'] . '<br>';
+//  echo 'User Agent: ' . $_SERVER['HTTP_USER_AGENT'] . '<br>';
+//  ?> 
 
 
