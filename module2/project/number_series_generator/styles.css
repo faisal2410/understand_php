@@ -1,0 +1,64 @@
+/* styles.css */
+
+/* Apply styles to the <body> element */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply styles to the <h1> element */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Apply styles to the form container */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Apply styles to the form labels */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Apply styles to the <input> elements */
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Apply styles to the submit button */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Apply styles to the generated series list */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Apply styles to list items */
+li {
+    margin-bottom: 5px;
+}
