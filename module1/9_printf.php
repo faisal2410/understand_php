@@ -144,11 +144,11 @@ Zero padded number: 00042 -->
 <!-- 4. Using comma as a thousand separator with '
 Useful for large numbers to improve readability. -->
 
-<!-- <?php
+<?php
 setlocale(LC_ALL, 'en_US'); // Make sure locale is set
-printf("Large number with comma: %'d\n", 1000000);
+printf("Large number with comma: %d\n", 1000000);
 
-?> -->
+?>
 <!-- Output:
 
 Large number with comma: 1,000,000 -->
