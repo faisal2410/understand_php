@@ -19,7 +19,7 @@
 // ✅Numeric Arrays:
 
 // $colors = ['red', 'green', 'blue'];
-// echo $colors[0]; // Output: red
+// echo $colors[0]; 
 
 // ✅Associative Arrays:
 
@@ -44,8 +44,8 @@
 
 // ✅Adding elements
 // $fruits = ['apple', 'banana', 'cherry'];
-// $fruits[] = 'orange'; // Adds 'orange' to the end of the array
-// array_push($fruits, 'grape'); // Adds 'grape' to the end of the array
+// $fruits[] = 'orange'; 
+// array_push($fruits, 'grape'); 
 // print_r($fruits);
 
 // ✅Removing elements
