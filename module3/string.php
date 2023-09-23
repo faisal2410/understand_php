@@ -26,7 +26,7 @@
 
 
 // $string = "Hello, World!";
-// $position = strpos($string, "World");
+// $position = strpos($string, "Hello");
 // if ($position !== false) {
 //     echo "Found 'World' at position: " . $position; 
 // } else {
@@ -36,13 +36,13 @@
 //✅ Example5
 
 // $string = "Hello, World!";
-// $substring = substr($string, 0, 5); 
+// $substring = substr($string, 2 ); 
 // echo $substring; 
 
 
 //✅ Example6
 
-// $string = "apple,banana,cherry";
+// $string = "apple banana cherry,mango";
 // $fruitsArray = explode(",", $string);
 // print_r($fruitsArray); 
 
@@ -51,7 +51,7 @@
 
 
 // $fruitsArray = ["apple", "banana", "cherry"];
-// $fruitsString = implode(", ", $fruitsArray);
+// $fruitsString = implode("*Faisal", $fruitsArray);
 // echo $fruitsString; 
 
 
@@ -72,7 +72,7 @@
 //✅ Example 10
 
 // $text = "Hello, World!";
-// $newText = str_replace("World", "Universe", $text);
+// $newText = str_replace("Hello","Hi", $text);
 // echo $newText; 
 
 
@@ -93,14 +93,15 @@
 //     $password = '';
     
 //     for ($i = 0; $i < $length; $i++) {
-//         $password .= $characters[rand(0, strlen($characters) - 1)];
+//         $password .= $characters[rand(0, strlen($characters)  -1)];
 //     }
     
 //     return $password;
 // }
 
 
-// echo generatePassword(10);
+
+// echo generatePassword(8);
 
 
 
