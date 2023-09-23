@@ -163,7 +163,7 @@
 // 6.✅ Padding with Zeros:
 // Pad a number with leading zeros to ensure a fixed length.
 
-// Copy code
+
 // $number = "42";
 // $paddedNumber = str_pad($number, 5, "0", STR_PAD_LEFT);
 // echo $paddedNumber;
